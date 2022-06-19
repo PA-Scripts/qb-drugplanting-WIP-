@@ -16,10 +16,13 @@ Config.SellPedTarget = vector3(1469.66, 6549.95, 14.9) -- Target Location for Se
 Config.SellPed = vector4(1469.66, 6549.95, 13.9, 357.71) -- Location for Sell Ped
 
 -- Sell Prices
-Config.AfghaniPrice = math.random(10, 20)
-Config.LemonhazePrice = math.random(10, 20)
-Config.WhitewidowPrice = math.random(10, 20)
-Config.MasterkushPrice = math.random(10, 20)
-Config.SkunkPrice = math.random(10, 20)
-Config.SkywalkerOGPrice = math.random(10, 20)
+-- Simplified
+Config.WeedPrice = math.random(10, 20)
+-- Complex
+-- Config.AfghaniPrice = math.random(10, 20)
+-- Config.LemonhazePrice = math.random(10, 20)
+-- Config.WhitewidowPrice = math.random(10, 20)
+-- Config.MasterkushPrice = math.random(10, 20)
+-- Config.SkunkPrice = math.random(10, 20)
+-- Config.SkywalkerOGPrice = math.random(10, 20)
 --if adding more

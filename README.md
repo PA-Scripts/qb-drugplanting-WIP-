@@ -11,6 +11,9 @@ QBCore drug system with seeds
 # Planned updates
 - Use target instead of inside plant z,y,z zone
 
+# Changelog
+- Added simplified version check below
+
 # Preview:
 No preview yet
 
@@ -50,7 +53,21 @@ Config.SkywalkerOGPrice = math.random(10, 20)
 - Add to qb-core/shared/items.lua
 
 ```
-		-- Seed And Weed
+	-- Seed And Weed
+	--Simplified
+	["weed"]             = {
+		["name"] = "weed",
+		["label"] = "White Widow 2g",
+		["weight"] = 200,
+		["type"] = "item",
+		["image"] = "weed_baggy.png",
+		["unique"] = false,
+		["useable"] = true,
+		["shouldClose"] = false,
+		["combinable"] = nil,
+		["description"] = "A weed bag with 2g"
+	},
+	--Complex
 	["weed_whitewidow"]             = {
 		["name"] = "weed_whitewidow",
 		["label"] = "White Widow 2g",
@@ -124,6 +141,19 @@ Config.SkywalkerOGPrice = math.random(10, 20)
 		["description"] = "A weed bag with 2g Skywalker OG"
 	},
 	-- Seeds
+	--Simplfied
+	["seed_weed"]        = {
+		["name"] = "seed_weed",
+		["label"] = "White Widow Seed",
+		["weight"] = 2,
+		["type"] = "item",
+		["image"] = "weed-plant-seed.png",
+		["unique"] = false,
+		["useable"] = true,
+		["shouldClose"] = false,
+		["combinable"] = nil,
+		["description"] = "Marijuana Seed"
+	},
 	["seed_weed_whitewidow"]        = {
 		["name"] = "weed_white-widow_seed",
 		["label"] = "White Widow Seed",
@@ -197,6 +227,20 @@ Config.SkywalkerOGPrice = math.random(10, 20)
 		["description"] = "A weed seed of Skywalker OG"
 	},
 	--raw weed
+	--Simplified
+		["raw_weed"]        = {
+		["name"] = "raw_weed",
+		["label"] = "White Widow Plant",
+		["weight"] = 2,
+		["type"] = "item",
+		["image"] = "harvested_weed.png",
+		["unique"] = false,
+		["useable"] = true,
+		["shouldClose"] = false,
+		["combinable"] = nil,
+		["description"] = "Raw Weed Plant"
+	},
+	--Complex
 	["raw_weed_whitewidow"]        = {
 		["name"] = "raw_weed_whitewidow",
 		["label"] = "White Widow Plant",
@@ -269,19 +313,7 @@ Config.SkywalkerOGPrice = math.random(10, 20)
 		["combinable"] = nil,
 		["description"] = "Raw Plant of Skywalker OG"
 	},
-	-- Shovel and scissors
-	["scissors"]            = {
-		["name"] = "scissors",
-		["label"] = "Scissors",
-		["weight"] = 100,
-		["type"] = "item",
-		["image"] = "scissors.png",
-		["unique"] = false,
-		["useable"] = true,
-		["shouldClose"] = true,
-		["combinable"] = nil,
-		["description"] = ""
-	},
+	-- Shovel
 	["trowel"]                 = {
 		["name"] = "trowel",
 		["label"] = "Trowel",
@@ -301,6 +333,7 @@ If you are adding more drugs to the script, make sure you add them to items.lua
 
 
 # Client/main.lua
+- Check for simplified or complex version
 
 ```
 {
@@ -319,6 +352,7 @@ end)
 
 
 # Server/main.lua
+- Check for simplified or complex version
 
 ```
 QBCore.Functions.CreateUseableItem('drugname', function(source, item)

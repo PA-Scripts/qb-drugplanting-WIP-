@@ -59,13 +59,6 @@ RegisterNetEvent('qb-drugs:client:MenuAccessories', function(data)
                 event = "qb-drugs:client:BuyShovel",
             }
         },
-        {
-            header = "Buy Scisors",
-            txt = "Price: 20$ per 1",
-            params = {
-                event = "qb-drugs:client:BuyScissors",
-            }
-        },
     })
 end)
 
@@ -81,48 +74,57 @@ RegisterNetEvent('qb-drugs:client:SeedsMenu', function()
                 event = "qb-drugs:client:MenuList",
             }
         },
+        --Simplified
         {
-            header = "Buy Afghani seeds",
+            header = "Buy weed seeds",
             txt = "Price: 20$ per 1",
             params = {
-                event = "qb-drugs:client:BuyAfghani",
+                event = "qb-drugs:client:BuyWeed",
             }
         },
-        {
-            header = "Buy Skywalker OG seeds",
-            txt = "Price: 20$ per 1",
-            params = {
-                event = "qb-drugs:client:BuySkywalkerOG",
-            }
-        },
-        {
-            header = "Buy Lemon Haze seeds",
-            txt = "Price: 20$ per 1",
-            params = {
-                event = "qb-drugs:client:BuyLemonHaze",
-            }
-        },
-        {
-            header = "Buy White Widow seeds",
-            txt = "Price: 20$ per 1",
-            params = {
-                event = "qb-drugs:client:BuyWhiteWidow",
-            }
-        },
-        {
-            header = "Buy Master Kush seeds",
-            txt = "Price: 20$ per 1",
-            params = {
-                event = "qb-drugs:client:BuyMasterKush",
-            }
-        },
-        {
-            header = "Buy Skunk seeds",
-            txt = "Price: 20$ per 1",
-            params = {
-                event = "qb-drugs:client:BuySkunk",
-            }
-        },
+        --complex
+        -- {
+        --     header = "Buy Afghani seeds",
+        --     txt = "Price: 20$ per 1",
+        --     params = {
+        --         event = "qb-drugs:client:BuyAfghani",
+        --     }
+        -- },
+        -- {
+        --     header = "Buy Skywalker OG seeds",
+        --     txt = "Price: 20$ per 1",
+        --     params = {
+        --         event = "qb-drugs:client:BuySkywalkerOG",
+        --     }
+        -- },
+        -- {
+        --     header = "Buy Lemon Haze seeds",
+        --     txt = "Price: 20$ per 1",
+        --     params = {
+        --         event = "qb-drugs:client:BuyLemonHaze",
+        --     }
+        -- },
+        -- {
+        --     header = "Buy White Widow seeds",
+        --     txt = "Price: 20$ per 1",
+        --     params = {
+        --         event = "qb-drugs:client:BuyWhiteWidow",
+        --     }
+        -- },
+        -- {
+        --     header = "Buy Master Kush seeds",
+        --     txt = "Price: 20$ per 1",
+        --     params = {
+        --         event = "qb-drugs:client:BuyMasterKush",
+        --     }
+        -- },
+        -- {
+        --     header = "Buy Skunk seeds",
+        --     txt = "Price: 20$ per 1",
+        --     params = {
+        --         event = "qb-drugs:client:BuySkunk",
+        --     }
+        -- },
     })
 end)
 
@@ -131,35 +133,42 @@ RegisterNetEvent('qb-drugs:client:BuyFertilizer', function()
     TriggerEvent('qb-drugs:client:MenuAccessories')
 end)
 
-RegisterNetEvent('qb-drugs:client:BuyAfghani', function()
-    TriggerServerEvent('qb-drugs:server:BuyAfghani')
+--Simplified
+RegisterNetEvent('qb-drugs:client:BuyWeed', function()
+    TriggerServerEvent('qb-drugs:server:BuyWeed')
     TriggerEvent('qb-drugs:client:SeedsMenu')
 end)
 
-RegisterNetEvent('qb-drugs:client:BuySkywalkerOG', function()
-    TriggerServerEvent('qb-drugs:server:BuySkywalkerOG')
-    TriggerEvent('qb-drugs:client:SeedsMenu')
-end)
+--Complex
+-- RegisterNetEvent('qb-drugs:client:BuyAfghani', function()
+--     TriggerServerEvent('qb-drugs:server:BuyAfghani')
+--     TriggerEvent('qb-drugs:client:SeedsMenu')
+-- end)
 
-RegisterNetEvent('qb-drugs:client:BuyLemonHaze', function()
-    TriggerServerEvent('qb-drugs:server:BuyLemonHaze')
-    TriggerEvent('qb-drugs:client:SeedsMenu')
-end)
+-- RegisterNetEvent('qb-drugs:client:BuySkywalkerOG', function()
+--     TriggerServerEvent('qb-drugs:server:BuySkywalkerOG')
+--     TriggerEvent('qb-drugs:client:SeedsMenu')
+-- end)
 
-RegisterNetEvent('qb-drugs:client:BuyWhiteWidow', function()
-    TriggerServerEvent('qb-drugs:server:BuyWhiteWidow')
-    TriggerEvent('qb-drugs:client:SeedsMenu')
-end)
+-- RegisterNetEvent('qb-drugs:client:BuyLemonHaze', function()
+--     TriggerServerEvent('qb-drugs:server:BuyLemonHaze')
+--     TriggerEvent('qb-drugs:client:SeedsMenu')
+-- end)
 
-RegisterNetEvent('qb-drugs:client:BuyMasterKush', function()
-    TriggerServerEvent('qb-drugs:server:BuyMasterKush')
-    TriggerEvent('qb-drugs:client:SeedsMenu')
-end)
+-- RegisterNetEvent('qb-drugs:client:BuyWhiteWidow', function()
+--     TriggerServerEvent('qb-drugs:server:BuyWhiteWidow')
+--     TriggerEvent('qb-drugs:client:SeedsMenu')
+-- end)
 
-RegisterNetEvent('qb-drugs:client:BuySkunk', function()
-    TriggerServerEvent('qb-drugs:server:BuySkunk')
-    TriggerEvent('qb-drugs:client:SeedsMenu')
-end)
+-- RegisterNetEvent('qb-drugs:client:BuyMasterKush', function()
+--     TriggerServerEvent('qb-drugs:server:BuyMasterKush')
+--     TriggerEvent('qb-drugs:client:SeedsMenu')
+-- end)
+
+-- RegisterNetEvent('qb-drugs:client:BuySkunk', function()
+--     TriggerServerEvent('qb-drugs:server:BuySkunk')
+--     TriggerEvent('qb-drugs:client:SeedsMenu')
+-- end)
 
 
 RegisterNetEvent('qb-drugs:client:BuyShovel', function()
@@ -167,10 +176,6 @@ RegisterNetEvent('qb-drugs:client:BuyShovel', function()
     TriggerEvent('qb-drugs:client:MenuAccessories')
 end)
 
-RegisterNetEvent('qb-drugs:client:BuyScissors', function()
-    TriggerServerEvent('qb-drugs:server:BuyScissors')
-    TriggerEvent('qb-drugs:client:MenuAccessories')
-end)
 
 
 -- Threads
