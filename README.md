@@ -258,7 +258,6 @@ end)
 ```
 Server/main.lua
 
-
 QBCore.Functions.CreateUseableItem('drugname', function(source, item)
     TriggerClientEvent("qb-drugs:client:startPlanting", source, 'drugname') 
 end)
@@ -269,8 +268,7 @@ end)
 
 ["drugname"] =  Config.drugnamePrice,
 
-```
-```
+
 - Add your own images to YOURINVENTORY/html/images
 
 
