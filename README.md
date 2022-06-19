@@ -1,14 +1,14 @@
 # qb-drugplanting
 QBCore drug system with seeds
--Can plant anywhere
--Can add more drugs if you want
+- Can plant anywhere
+- Can add more drugs if you want
 
 ##
 
 # Preview:
 No preview yet
 
-# Instalation:
+# Installation:
 
 - Run SQL File
 
