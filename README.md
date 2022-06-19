@@ -4,7 +4,9 @@ QBCore drug system with seeds
 - Can add more drugs if you want
 - Can work with ps-drugproccesing https://github.com/Project-Sloth/ps-drugprocessing
 
-##
+# Issues:
+- Need to add soil check
+- Small plants are able to be knocked over
 
 # Preview:
 No preview yet
