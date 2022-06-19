@@ -8,7 +8,7 @@ QBCore drug system with seeds
 - Need to add soil check (can plant anywhere)
 
 # Planned updates
-- Use target instead of inside plant z,y,z zone
+- Use target instead of inside plant x,y,z zone
 
 # Changelog
 - Added simplified version check below (default is Simplified)
