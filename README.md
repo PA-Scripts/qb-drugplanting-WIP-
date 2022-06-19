@@ -270,7 +270,7 @@ end)
 ["drugname"] =  Config.drugnamePrice,
 
 ```
-
+```
 - Add your own images to YOURINVENTORY/html/images
 
 
