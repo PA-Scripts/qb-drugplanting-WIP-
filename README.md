@@ -58,6 +58,8 @@ Config.WeedPrice = math.random(10, 20)
 - Add to qb-core/shared/items.lua
 
 ```
+-- Weed
+--Simplified
 	["weed"]             = {
 		["name"] = "weed",
 		["label"] = "Weed Bag 2g",
@@ -70,6 +72,7 @@ Config.WeedPrice = math.random(10, 20)
 		["combinable"] = nil,
 		["description"] = "A weed bag with 2g"
 	},
+	--complex
 	-- ["weed_whitewidow"]             = {
 	-- 	["name"] = "weed_whitewidow",
 	-- 	["label"] = "White Widow 2g",
