@@ -8,7 +8,7 @@ QBCore drug system with seeds
 # Preview:
 No preview yet
 
-# Config
+# Config:
 ```
 Config = {}
 
