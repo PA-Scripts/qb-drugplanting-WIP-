@@ -236,6 +236,8 @@ No preview yet
 		["description"] = "Raw Plant of Skywalker OG"
 	},
 
+If you are adding more drugs to the script, make sure you add them to items.lua
+
 ```
 - To add More Drugs
 
