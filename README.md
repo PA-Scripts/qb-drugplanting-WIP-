@@ -6,6 +6,7 @@ QBCore drug system with seeds
 
 # Issues:
 - Need to add soil check (can plant anywhere)
+- Need to sync server side for all players to see plants
 
 # Planned updates
 - Use target instead of inside plant x,y,z zone
