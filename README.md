@@ -2,6 +2,7 @@
 QBCore drug system with seeds
 - Can plant anywhere
 - Can add more drugs if you want
+- Can work with ps-drugproccesing https://github.com/Project-Sloth/ps-drugprocessing
 
 ##
 
