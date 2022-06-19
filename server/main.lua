@@ -26,18 +26,6 @@ RegisterNetEvent('qb-drugs:server:BuyShovel', function()
     Player.Functions.AddItem(item, plantamount)
 end)
 
-RegisterNetEvent('qb-drugs:server:BuyOGShark', function()
-    local src = source
-    local Player = QBCore.Functions.GetPlayer(src)
-    local item = 'seed_weed_ogshark'
-    local money = 'bank'
-    local plantamount = 1
-    local price = 20
-
-    Player.Functions.RemoveMoney(money, price)
-    Player.Functions.AddItem(item, plantamount)
-end)
-
 
 RegisterNetEvent('qb-drugs:server:BuySkywalkerOG', function()
     local src = source
@@ -111,6 +99,18 @@ RegisterNetEvent('qb-drugs:server:BuyAfghani', function()
     Player.Functions.AddItem(item, plantamount)
 end)
 
+-- Can add more
+-- RegisterNetEvent('qb-drugs:server:BuyDRUGNAME', function()
+--     local src = source
+--     local Player = QBCore.Functions.GetPlayer(src)
+--     local item = 'DRUGNAME'
+--     local money = 'bank'
+--     local plantamount = 1
+--     local price = 20
+
+--     Player.Functions.RemoveMoney(money, price)
+--     Player.Functions.AddItem(item, plantamount)
+-- end)
 
 RegisterNetEvent('qb-drugs:server:BuyWateringCan', function()
     local src = source
@@ -278,30 +278,27 @@ RegisterNetEvent("qb-drugs:server:addFood", function(seed, info)
     local plantplantamount = Config.PlantAlimentsQuantity
     
  
-    if weedseed == 'seed_weed_ogshark' then
-        Player.Functions.AddItem('raw_weed_ogshark', plantplantamount)
-        Player.Functions.AddItem('seed_weed_skunk', math.random(2, 5))
-    elseif weedseed == 'seed_weed_skywalkerog' then
-        Player.Functions.AddItem('raw_weed_skywalkerog', plantplantamount)
-        Player.Functions.AddItem('seed_weed_skunk', math.random(2, 5))
+    if weedseed == 'seed_weed_skywalkerog' then
+        Player.Functions.AddItem('raw_weed_skywalkerog', 1)
+        Player.Functions.AddItem('seed_weed_skywalkerog', math.random(2, 5))
     elseif weedseed == 'seed_weed_afghani' then
-        Player.Functions.AddItem('raw_weed_afghani', plantplantamount)
-        Player.Functions.AddItem('seed_weed_skunk', math.random(2, 5))
+        Player.Functions.AddItem('raw_weed_afghani', 1)
+        Player.Functions.AddItem('seed_weed_afghani', math.random(2, 5))
     elseif weedseed == 'seed_weed_lemonhaze' then
-        Player.Functions.AddItem('raw_weed_lemonhaze', plantplantamount)
-        Player.Functions.AddItem('seed_weed_skunk', math.random(2, 5))
+        Player.Functions.AddItem('raw_weed_lemonhaze', 1)
+        Player.Functions.AddItem('seed_weed_lemonhaze', math.random(2, 5))
     elseif weedseed == 'seed_weed_whitewidow' then
-        Player.Functions.AddItem('raw_weed_whitewidow', plantplantamount)
-        Player.Functions.AddItem('seed_weed_skunk', math.random(2, 5))
+        Player.Functions.AddItem('raw_weed_whitewidow', 1)
+        Player.Functions.AddItem('seed_weed_whitewidow', math.random(2, 5))
     elseif weedseed == 'seed_weed_masterkush' then
-        Player.Functions.AddItem('raw_weed_masterkush', plantplantamount)
-        Player.Functions.AddItem('seed_weed_skunk', math.random(2, 5))
+        Player.Functions.AddItem('raw_weed_masterkush', 1)
+        Player.Functions.AddItem('seed_weed_masterkush', math.random(2, 5))
     elseif weedseed == 'seed_weed_skunk' then
-        Player.Functions.AddItem('raw_weed_skunk', plantplantamount)
+        Player.Functions.AddItem('raw_weed_skunk', 1)
         Player.Functions.AddItem('seed_weed_skunk', math.random(2, 5))    
          --can add more
         -- elseif weedseed == 'drugname' then
-        --     Player.Functions.AddItem('drugname', plantplantamount)  
+        --     Player.Functions.AddItem('drugname', 1)  
     end
 
 end)

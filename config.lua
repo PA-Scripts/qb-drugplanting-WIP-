@@ -11,9 +11,6 @@ Config.GrowRate = 1 -- In how many seconds it takes to update the plant (At 100%
 Config.WaterQuantity = math.random(50, 100) -- Quantity of water that 1 water can can fill the plant
 Config.FertilizerQuantity = math.random(50, 100) -- Quantity of fertilizer that 1 fertilizer can fill the plant
 
-
-Config.PlantAlimentsQuantity = math.random(10, 30) -- How many aliments 1 plant give to player
-
 Config.ProcessPedTarget = vector3(441.94, 6457.66, 35.86) -- Target Location for Process Ped
 Config.ProcessPed = vector4(441.94, 6457.66, 34.86, 49.13) -- Location for Process Ped
 
