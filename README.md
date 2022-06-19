@@ -163,12 +163,12 @@ No preview yet
 		["description"] = "A weed seed of Skywalker OG"
 	},
 	--raw weed
-	["raw_weed_whitewidow"]        = {
+["raw_weed_whitewidow"]        = {
 		["name"] = "weed_white-widow_seed",
 		["label"] = "White Widow Plant",
 		["weight"] = 2,
 		["type"] = "item",
-		["image"] = "weed_seed.png",
+		["image"] = "harvested_weed.png",
 		["unique"] = false,
 		["useable"] = true,
 		["shouldClose"] = false,
@@ -180,7 +180,7 @@ No preview yet
 		["label"] = "Skunk Plant",
 		["weight"] = 2,
 		["type"] = "item",
-		["image"] = "weed_seed.png",
+		["image"] = "harvested_weed.png",
 		["unique"] = false,
 		["useable"] = true,
 		["shouldClose"] = true,
@@ -192,7 +192,7 @@ No preview yet
 		["label"] = "Lemon Haze Plant",
 		["weight"] = 2,
 		["type"] = "item",
-		["image"] = "weed_seed.png",
+		["image"] = "harvested_weed.png",
 		["unique"] = false,
 		["useable"] = true,
 		["shouldClose"] = true,
@@ -204,7 +204,7 @@ No preview yet
 		["label"] = "Master Kush Plant",
 		["weight"] = 2,
 		["type"] = "item",
-		["image"] = "weed_seed.png",
+		["image"] = "harvested_weed.png",
 		["unique"] = false,
 		["useable"] = true,
 		["shouldClose"] = true,
@@ -216,7 +216,7 @@ No preview yet
 		["label"] = "Afghani Plant",
 		["weight"] = 2,
 		["type"] = "item",
-		["image"] = "weed_seed.png",
+		["image"] = "harvested_weed.png",
 		["unique"] = false,
 		["useable"] = true,
 		["shouldClose"] = true,
@@ -228,14 +228,13 @@ No preview yet
 		["label"] = "Skywalker OG Plant",
 		["weight"] = 2,
 		["type"] = "item",
-		["image"] = "weed_seed.png",
+		["image"] = "harvested_weed.png",
 		["unique"] = false,
 		["useable"] = true,
 		["shouldClose"] = true,
 		["combinable"] = nil,
 		["description"] = "Raw Plant of Skywalker OG"
 	},
-
 If you are adding more drugs to the script, make sure you add them to items.lua
 
 ```
