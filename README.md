@@ -1,6 +1,7 @@
 # qb-drugplanting
 QBCore drug system with seeds
-Can plant anywhere
+-Can plant anywhere
+-Can add more drugs if you want
 
 ##
 
@@ -237,7 +238,8 @@ No preview yet
 
 ```
 
-- Add images to YOURINVENTORY/html/images
+- Add your own images to YOURINVENTORY/html/images
+
 
 ##
 
