@@ -12,7 +12,7 @@ QBCore drug system with seeds
 - Use target instead of inside plant z,y,z zone
 
 # Changelog
-- Added simplified version check below
+- Added simplified version check below (default is Simplified)
 
 # Preview:
 No preview yet
