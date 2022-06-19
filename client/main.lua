@@ -334,8 +334,7 @@ RegisterNetEvent("qb-drugs:client:addPlant",function(seed, coords, id)
     Plants[id] = {seed = seed, coords = coords}
     SpawnedPlants[id] =CreateObject(GetHashKey(crop_type[entity].stage_1[1]),coords[1],coords[2],coords[3] + crop_type[entity].stage_1[2],false,true,1)
     SetEntityAsMissionEntity(SpawnedPlants[id], true, true)  
-    SetEntityInvincible(SpawnedPlants, true)
-    FreezeEntityPosition(SpawnedPlants, true)
+    FreezeEntityPosition(SpawnedPlants[id], true)
 end)
 
 RegisterNetEvent('qb-drugs:client:plantOptions', function(args, data)
