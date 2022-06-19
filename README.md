@@ -255,7 +255,7 @@ RegisterNetEvent('qb-drugs:client:BuyDRUGNAME', function()
     TriggerEvent('qb-drugs:client:SeedsMenu')
 end)
 
-```
+
 Server/main.lua
 
 QBCore.Functions.CreateUseableItem('drugname', function(source, item)
@@ -267,6 +267,7 @@ end)
      Player.Functions.AddItem('drugname', plantplantamount)  
 
 ["drugname"] =  Config.drugnamePrice,
+```
 
 
 - Add your own images to YOURINVENTORY/html/images
