@@ -1,9 +1,11 @@
-# mt-farm2.0
-QBCore farm system with seeds and some more things
+# qb-drugplanting
+QBCore drug system with seeds
+Can plant anywhere
 
 ##
 
 # Preview:
+No preview yet
 
 # Instalation:
 
@@ -235,12 +237,12 @@ QBCore farm system with seeds and some more things
 
 ```
 
-- Add images to qb-inventory/html/images
+- Add images to YOURINVENTORY/html/images
 
 ##
 
 # Credits:
-Mt-farm
+Marttins011 Farm2.0 - https://github.com/Marttins011/mt-farm2.0
 
 # Dependicies:
 - qb-core: https://github.com/qbcore-framework/qb-core
