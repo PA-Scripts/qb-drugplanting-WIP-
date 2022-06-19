@@ -194,7 +194,7 @@ Config.SkywalkerOGPrice = math.random(10, 20)
 		["description"] = "A weed seed of Skywalker OG"
 	},
 	--raw weed
-["raw_weed_whitewidow"]        = {
+	["raw_weed_whitewidow"]        = {
 		["name"] = "weed_white-widow_seed",
 		["label"] = "White Widow Plant",
 		["weight"] = 2,
