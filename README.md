@@ -58,11 +58,9 @@ Config.WeedPrice = math.random(10, 20)
 - Add to qb-core/shared/items.lua
 
 ```
-	-- Seed And Weed
-	--Simplified
 	["weed"]             = {
 		["name"] = "weed",
-		["label"] = "White Widow 2g",
+		["label"] = "Weed Bag 2g",
 		["weight"] = 200,
 		["type"] = "item",
 		["image"] = "weed_baggy.png",
@@ -72,84 +70,82 @@ Config.WeedPrice = math.random(10, 20)
 		["combinable"] = nil,
 		["description"] = "A weed bag with 2g"
 	},
-	--Complex
-	["weed_whitewidow"]             = {
-		["name"] = "weed_whitewidow",
-		["label"] = "White Widow 2g",
-		["weight"] = 200,
-		["type"] = "item",
-		["image"] = "weed_baggy.png",
-		["unique"] = false,
-		["useable"] = true,
-		["shouldClose"] = false,
-		["combinable"] = nil,
-		["description"] = "A weed bag with 2g White Widow"
-	},
-	["weed_skunk"]                   = {
-		["name"] = "weed_skunk",
-		["label"] = "Skunk 2g",
-		["weight"] = 200,
-		["type"] = "item",
-		["image"] = "weed_baggy.png",
-		["unique"] = false,
-		["useable"] = true,
-		["shouldClose"] = false,
-		["combinable"] = nil,
-		["description"] = "A weed bag with 2g Skunk"
-	},
-	["weed_lemonhaze"]            = {
-		["name"] = "weed_lemonhaze",
-		["label"] = "Lemon Haze 2g",
-		["weight"] = 200,
-		["type"] = "item",
-		["image"] = "weed_baggy.png",
-		["unique"] = false,
-		["useable"] = true,
-		["shouldClose"] = false,
-		["combinable"] = nil,
-		["description"] = "A weed bag with 2g Lemon Haze"
-	},
-	["weed_masterkusk"]                 = {
-		["name"] = "weed_masterkusk",
-		["label"] = "Master Kush 2g",
-		["weight"] = 200,
-		["type"] = "item",
-		["image"] = "weed_baggy.png",
-		["unique"] = false,
-		["useable"] = true,
-		["shouldClose"] = false,
-		["combinable"] = nil,
-		["description"] = "A weed bag with 2g Master Kush"
-	},
-	["weed_afghani"]                 = {
-		["name"] = "weed_afghani",
-		["label"] = "Afghani 2g",
-		["weight"] = 200,
-		["type"] = "item",
-		["image"] = "weed_baggy.png",
-		["unique"] = false,
-		["useable"] = true,
-		["shouldClose"] = false,
-		["combinable"] = nil,
-		["description"] = "A weed bag with 2g Afgani"
-	},
-	["weed_skywalkerog"]                    = {
-		["name"] = "weed_skywalkerog",
-		["label"] = "Skywalker OG 2g",
-		["weight"] = 200,
-		["type"] = "item",
-		["image"] = "weed_baggy.png",
-		["unique"] = false,
-		["useable"] = true,
-		["shouldClose"] = false,
-		["combinable"] = nil,
-		["description"] = "A weed bag with 2g Skywalker OG"
-	},
+	-- ["weed_whitewidow"]             = {
+	-- 	["name"] = "weed_whitewidow",
+	-- 	["label"] = "White Widow 2g",
+	-- 	["weight"] = 200,
+	-- 	["type"] = "item",
+	-- 	["image"] = "weed_baggy.png",
+	-- 	["unique"] = false,
+	-- 	["useable"] = true,
+	-- 	["shouldClose"] = false,
+	-- 	["combinable"] = nil,
+	-- 	["description"] = "A weed bag with 2g White Widow"
+	-- },
+	-- ["weed_skunk"]                   = {
+	-- 	["name"] = "weed_skunk",
+	-- 	["label"] = "Skunk 2g",
+	-- 	["weight"] = 200,
+	-- 	["type"] = "item",
+	-- 	["image"] = "weed_baggy.png",
+	-- 	["unique"] = false,
+	-- 	["useable"] = true,
+	-- 	["shouldClose"] = false,
+	-- 	["combinable"] = nil,
+	-- 	["description"] = "A weed bag with 2g Skunk"
+	-- },
+	-- ["weed_lemonhaze"]            = {
+	-- 	["name"] = "weed_lemonhaze",
+	-- 	["label"] = "Lemon Haze 2g",
+	-- 	["weight"] = 200,
+	-- 	["type"] = "item",
+	-- 	["image"] = "weed_baggy.png",
+	-- 	["unique"] = false,
+	-- 	["useable"] = true,
+	-- 	["shouldClose"] = false,
+	-- 	["combinable"] = nil,
+	-- 	["description"] = "A weed bag with 2g Lemon Haze"
+	-- },
+	-- ["weed_masterkusk"]                 = {
+	-- 	["name"] = "weed_masterkusk",
+	-- 	["label"] = "Master Kush 2g",
+	-- 	["weight"] = 200,
+	-- 	["type"] = "item",
+	-- 	["image"] = "weed_baggy.png",
+	-- 	["unique"] = false,
+	-- 	["useable"] = true,
+	-- 	["shouldClose"] = false,
+	-- 	["combinable"] = nil,
+	-- 	["description"] = "A weed bag with 2g Master Kush"
+	-- },
+	-- ["weed_afghani"]                 = {
+	-- 	["name"] = "weed_afghani",
+	-- 	["label"] = "Afghani 2g",
+	-- 	["weight"] = 200,
+	-- 	["type"] = "item",
+	-- 	["image"] = "weed_baggy.png",
+	-- 	["unique"] = false,
+	-- 	["useable"] = true,
+	-- 	["shouldClose"] = false,
+	-- 	["combinable"] = nil,
+	-- 	["description"] = "A weed bag with 2g Afgani"
+	-- },
+	-- ["weed_skywalkerog"]                    = {
+	-- 	["name"] = "weed_skywalkerog",
+	-- 	["label"] = "Skywalker OG 2g",
+	-- 	["weight"] = 200,
+	-- 	["type"] = "item",
+	-- 	["image"] = "weed_baggy.png",
+	-- 	["unique"] = false,
+	-- 	["useable"] = true,
+	-- 	["shouldClose"] = false,
+	-- 	["combinable"] = nil,
+	-- 	["description"] = "A weed bag with 2g Skywalker OG"
+	-- },
 	-- Seeds
-	--Simplfied
 	["seed_weed"]        = {
 		["name"] = "seed_weed",
-		["label"] = "White Widow Seed",
+		["label"] = "Weed Seed",
 		["weight"] = 2,
 		["type"] = "item",
 		["image"] = "weed-plant-seed.png",
@@ -159,83 +155,82 @@ Config.WeedPrice = math.random(10, 20)
 		["combinable"] = nil,
 		["description"] = "Marijuana Seed"
 	},
-	["seed_weed_whitewidow"]        = {
-		["name"] = "weed_white-widow_seed",
-		["label"] = "White Widow Seed",
-		["weight"] = 2,
-		["type"] = "item",
-		["image"] = "weed-plant-seed.png",
-		["unique"] = false,
-		["useable"] = true,
-		["shouldClose"] = false,
-		["combinable"] = nil,
-		["description"] = "A weed seed of White Widow"
-	},
-	["seed_weed_skunk"]              = {
-		["name"] = "seed_weed_skunk",
-		["label"] = "Skunk Seed",
-		["weight"] = 2,
-		["type"] = "item",
-		["image"] = "weed-plant-seed.png",
-		["unique"] = false,
-		["useable"] = true,
-		["shouldClose"] = true,
-		["combinable"] = nil,
-		["description"] = "A weed seed of Skunk"
-	},
-	["seed_weed_lemonhaze"]        = {
-		["name"] = "seed_weed_lemonhaze",
-		["label"] = "Lemon Haze Seed",
-		["weight"] = 2,
-		["type"] = "item",
-		["image"] = "weed-plant-seed.png",
-		["unique"] = false,
-		["useable"] = true,
-		["shouldClose"] = true,
-		["combinable"] = nil,
-		["description"] = "A weed seed of Lemon Haze"
-	},
-	["seed_weed_masterkush"]            = {
-		["name"] = "seed_weed_masterkush",
-		["label"] = "Master Seed",
-		["weight"] = 2,
-		["type"] = "item",
-		["image"] = "weed-plant-seed.png",
-		["unique"] = false,
-		["useable"] = true,
-		["shouldClose"] = true,
-		["combinable"] = nil,
-		["description"] = "A weed seed of Master Kush"
-	},
-	["seed_weed_afghani"]            = {
-		["name"] = "seed_weed_afghani",
-		["label"] = "Afghani Seed",
-		["weight"] = 2,
-		["type"] = "item",
-		["image"] = "weed-plant-seed.png",
-		["unique"] = false,
-		["useable"] = true,
-		["shouldClose"] = true,
-		["combinable"] = nil,
-		["description"] = "A weed seed of Afghani"
-	},
-	["seed_weed_skywalkerog"]               = {
-		["name"] = "seed_weed_skywalkerog",
-		["label"] = "Skywalker OG Seed",
-		["weight"] = 2,
-		["type"] = "item",
-		["image"] = "weed-plant-seed.png",
-		["unique"] = false,
-		["useable"] = true,
-		["shouldClose"] = true,
-		["combinable"] = nil,
-		["description"] = "A weed seed of Skywalker OG"
-	},
+	-- ["seed_weed_whitewidow"]        = {
+	-- 	["name"] = "seed_weed_whitewidow",
+	-- 	["label"] = "White Widow Seed",
+	-- 	["weight"] = 2,
+	-- 	["type"] = "item",
+	-- 	["image"] = "weed-plant-seed.png",
+	-- 	["unique"] = false,
+	-- 	["useable"] = true,
+	-- 	["shouldClose"] = false,
+	-- 	["combinable"] = nil,
+	-- 	["description"] = "A weed seed of White Widow"
+	-- },
+	-- ["seed_weed_skunk"]              = {
+	-- 	["name"] = "seed_weed_skunk",
+	-- 	["label"] = "Skunk Seed",
+	-- 	["weight"] = 2,
+	-- 	["type"] = "item",
+	-- 	["image"] = "weed-plant-seed.png",
+	-- 	["unique"] = false,
+	-- 	["useable"] = true,
+	-- 	["shouldClose"] = true,
+	-- 	["combinable"] = nil,
+	-- 	["description"] = "A weed seed of Skunk"
+	-- },
+	-- ["seed_weed_lemonhaze"]        = {
+	-- 	["name"] = "seed_weed_lemonhaze",
+	-- 	["label"] = "Lemon Haze Seed",
+	-- 	["weight"] = 2,
+	-- 	["type"] = "item",
+	-- 	["image"] = "weed-plant-seed.png",
+	-- 	["unique"] = false,
+	-- 	["useable"] = true,
+	-- 	["shouldClose"] = true,
+	-- 	["combinable"] = nil,
+	-- 	["description"] = "A weed seed of Lemon Haze"
+	-- },
+	-- ["seed_weed_masterkush"]            = {
+	-- 	["name"] = "seed_weed_masterkush",
+	-- 	["label"] = "Master Seed",
+	-- 	["weight"] = 2,
+	-- 	["type"] = "item",
+	-- 	["image"] = "weed-plant-seed.png",
+	-- 	["unique"] = false,
+	-- 	["useable"] = true,
+	-- 	["shouldClose"] = true,
+	-- 	["combinable"] = nil,
+	-- 	["description"] = "A weed seed of Master Kush"
+	-- },
+	-- ["seed_weed_afghani"]            = {
+	-- 	["name"] = "seed_weed_afghani",
+	-- 	["label"] = "Afghani Seed",
+	-- 	["weight"] = 2,
+	-- 	["type"] = "item",
+	-- 	["image"] = "weed-plant-seed.png",
+	-- 	["unique"] = false,
+	-- 	["useable"] = true,
+	-- 	["shouldClose"] = true,
+	-- 	["combinable"] = nil,
+	-- 	["description"] = "A weed seed of Afghani"
+	-- },
+	-- ["seed_weed_skywalkerog"]               = {
+	-- 	["name"] = "seed_weed_skywalkerog",
+	-- 	["label"] = "Skywalker OG Seed",
+	-- 	["weight"] = 2,
+	-- 	["type"] = "item",
+	-- 	["image"] = "weed-plant-seed.png",
+	-- 	["unique"] = false,
+	-- 	["useable"] = true,
+	-- 	["shouldClose"] = true,
+	-- 	["combinable"] = nil,
+	-- 	["description"] = "A weed seed of Skywalker OG"
+	-- },
 	--raw weed
-	--Simplified
-		["raw_weed"]        = {
+	["raw_weed"]        = {
 		["name"] = "raw_weed",
-		["label"] = "White Widow Plant",
+		["label"] = "Weed Plant",
 		["weight"] = 2,
 		["type"] = "item",
 		["image"] = "harvested_weed.png",
@@ -245,80 +240,80 @@ Config.WeedPrice = math.random(10, 20)
 		["combinable"] = nil,
 		["description"] = "Raw Weed Plant"
 	},
-	--Complex
-	["raw_weed_whitewidow"]        = {
-		["name"] = "raw_weed_whitewidow",
-		["label"] = "White Widow Plant",
-		["weight"] = 2,
-		["type"] = "item",
-		["image"] = "harvested_weed.png",
-		["unique"] = false,
-		["useable"] = true,
-		["shouldClose"] = false,
-		["combinable"] = nil,
-		["description"] = "Raw Plant of White Widow"
-	},
-	["raw_weed_skunk"]              = {
-		["name"] = "raw_weed_skunk",
-		["label"] = "Skunk Plant",
-		["weight"] = 2,
-		["type"] = "item",
-		["image"] = "harvested_weed.png",
-		["unique"] = false,
-		["useable"] = true,
-		["shouldClose"] = true,
-		["combinable"] = nil,
-		["description"] = "Raw Plant of Skunk"
-	},
-	["raw_weed_lemonhaze"]        = {
-		["name"] = "raw_weed_lemonhaze",
-		["label"] = "Lemon Haze Plant",
-		["weight"] = 2,
-		["type"] = "item",
-		["image"] = "harvested_weed.png",
-		["unique"] = false,
-		["useable"] = true,
-		["shouldClose"] = true,
-		["combinable"] = nil,
-		["description"] = "Raw Plant of Lemon Haze"
-	},
-	["raw_weed_masterkush"]            = {
-		["name"] = "raw_weed_masterkush",
-		["label"] = "Master Kush Plant",
-		["weight"] = 2,
-		["type"] = "item",
-		["image"] = "harvested_weed.png",
-		["unique"] = false,
-		["useable"] = true,
-		["shouldClose"] = true,
-		["combinable"] = nil,
-		["description"] = "Raw Plant of Master Kush"
-	},
-	["raw_weed_afghani"]            = {
-		["name"] = "raw_weed_afghani",
-		["label"] = "Afghani Plant",
-		["weight"] = 2,
-		["type"] = "item",
-		["image"] = "harvested_weed.png",
-		["unique"] = false,
-		["useable"] = true,
-		["shouldClose"] = true,
-		["combinable"] = nil,
-		["description"] = "Raw Plant of Afghani"
-	},
-	["raw_weed_skywalkerog"]               = {
-		["name"] = "raw_weed_skywalkerog",
-		["label"] = "Skywalker OG Plant",
-		["weight"] = 2,
-		["type"] = "item",
-		["image"] = "harvested_weed.png",
-		["unique"] = false,
-		["useable"] = true,
-		["shouldClose"] = true,
-		["combinable"] = nil,
-		["description"] = "Raw Plant of Skywalker OG"
-	},
-	-- Shovel
+	-- ["raw_weed_whitewidow"]        = {
+	-- 	["name"] = "raw_weed_whitewidow",
+	-- 	["label"] = "White Widow Plant",
+	-- 	["weight"] = 2,
+	-- 	["type"] = "item",
+	-- 	["image"] = "harvested_weed.png",
+	-- 	["unique"] = false,
+	-- 	["useable"] = true,
+	-- 	["shouldClose"] = false,
+	-- 	["combinable"] = nil,
+	-- 	["description"] = "Raw Plant of White Widow"
+	-- },
+	-- ["raw_weed_skunk"]              = {
+	-- 	["name"] = "raw_weed_skunk",
+	-- 	["label"] = "Skunk Plant",
+	-- 	["weight"] = 2,
+	-- 	["type"] = "item",
+	-- 	["image"] = "harvested_weed.png",
+	-- 	["unique"] = false,
+	-- 	["useable"] = true,
+	-- 	["shouldClose"] = true,
+	-- 	["combinable"] = nil,
+	-- 	["description"] = "Raw Plant of Skunk"
+	-- },
+	-- ["raw_weed_lemonhaze"]        = {
+	-- 	["name"] = "raw_weed_lemonhaze",
+	-- 	["label"] = "Lemon Haze Plant",
+	-- 	["weight"] = 2,
+	-- 	["type"] = "item",
+	-- 	["image"] = "harvested_weed.png",
+	-- 	["unique"] = false,
+	-- 	["useable"] = true,
+	-- 	["shouldClose"] = true,
+	-- 	["combinable"] = nil,
+	-- 	["description"] = "Raw Plant of Lemon Haze"
+	-- },
+	-- ["raw_weed_masterkush"]            = {
+	-- 	["name"] = "raw_weed_masterkush",
+	-- 	["label"] = "Master Kush Plant",
+	-- 	["weight"] = 2,
+	-- 	["type"] = "item",
+	-- 	["image"] = "harvested_weed.png",
+	-- 	["unique"] = false,
+	-- 	["useable"] = true,
+	-- 	["shouldClose"] = true,
+	-- 	["combinable"] = nil,
+	-- 	["description"] = "Raw Plant of Master Kush"
+	-- },
+	-- ["raw_weed_afghani"]            = {
+	-- 	["name"] = "raw_weed_afghani",
+	-- 	["label"] = "Afghani Plant",
+	-- 	["weight"] = 2,
+	-- 	["type"] = "item",
+	-- 	["image"] = "harvested_weed.png",
+	-- 	["unique"] = false,
+	-- 	["useable"] = true,
+	-- 	["shouldClose"] = true,
+	-- 	["combinable"] = nil,
+	-- 	["description"] = "Raw Plant of Afghani"
+	-- },
+	-- ["raw_weed_skywalkerog"]               = {
+	-- 	["name"] = "raw_weed_skywalkerog",
+	-- 	["label"] = "Skywalker OG Plant",
+	-- 	["weight"] = 2,
+	-- 	["type"] = "item",
+	-- 	["image"] = "harvested_weed.png",
+	-- 	["unique"] = false,
+	-- 	["useable"] = true,
+	-- 	["shouldClose"] = true,
+	-- 	["combinable"] = nil,
+	-- 	["description"] = "Raw Plant of Skywalker OG"
+	-- },
+	-- ground weed
+	--Trowel
 	["trowel"]                 = {
 		["name"] = "trowel",
 		["label"] = "Trowel",
