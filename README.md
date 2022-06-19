@@ -8,6 +8,9 @@ QBCore drug system with seeds
 - Need to add soil check (can plant anywhere)
 - Small plants are able to be knocked over
 
+# Planned updates
+- Use target instead of inside plant z,y,z zone
+
 # Preview:
 No preview yet
 
