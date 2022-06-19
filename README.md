@@ -240,8 +240,9 @@ No preview yet
 - To add More Drugs
 
 ```
-Client/main.lua
+# Client/main.lua
 
+```
 {
     header = "Buy DRUGNAME seeds",
     txt = "Price: 20$ per 1",
@@ -256,8 +257,9 @@ RegisterNetEvent('qb-drugs:client:BuyDRUGNAME', function()
 end)
 
 
-Server/main.lua
+# Server/main.lua
 
+```
 QBCore.Functions.CreateUseableItem('drugname', function(source, item)
     TriggerClientEvent("qb-drugs:client:startPlanting", source, 'drugname') 
 end)
