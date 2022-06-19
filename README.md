@@ -29,9 +29,6 @@ Config.GrowRate = 1 -- In how many seconds it takes to update the plant (At 100%
 Config.WaterQuantity = math.random(50, 100) -- Quantity of water that 1 water can can fill the plant
 Config.FertilizerQuantity = math.random(50, 100) -- Quantity of fertilizer that 1 fertilizer can fill the plant
 
-Config.ProcessPedTarget = vector3(441.94, 6457.66, 35.86) -- Target Location for Process Ped
-Config.ProcessPed = vector4(441.94, 6457.66, 34.86, 49.13) -- Location for Process Ped
-
 Config.SellPedTarget = vector3(1469.66, 6549.95, 14.9) -- Target Location for Sell Ped
 Config.SellPed = vector4(1469.66, 6549.95, 13.9, 357.71) -- Location for Sell Ped
 
