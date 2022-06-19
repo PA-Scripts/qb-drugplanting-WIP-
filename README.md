@@ -237,6 +237,39 @@ No preview yet
 	},
 
 ```
+- To add More Drugs
+
+```
+Client/main.lua
+
+{
+    header = "Buy DRUGNAME seeds",
+    txt = "Price: 20$ per 1",
+    params = {
+        event = "qb-drugs:client:BuyDRUGNAME",
+    }
+},
+
+RegisterNetEvent('qb-drugs:client:BuyDRUGNAME', function()
+    TriggerServerEvent('qb-drugs:server:BuySkunk')
+    TriggerEvent('qb-drugs:client:SeedsMenu')
+end)
+
+```
+Server/main.lua
+
+
+QBCore.Functions.CreateUseableItem('drugname', function(source, item)
+    TriggerClientEvent("qb-drugs:client:startPlanting", source, 'drugname') 
+end)
+
+
+ elseif weedseed == 'drugname' then
+     Player.Functions.AddItem('drugname', plantplantamount)  
+
+["drugname"] =  Config.drugnamePrice,
+
+```
 
 - Add your own images to YOURINVENTORY/html/images
 
