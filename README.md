@@ -270,7 +270,7 @@ Config.SkywalkerOGPrice = math.random(10, 20)
 		["description"] = "Raw Plant of Skywalker OG"
 	},
 	-- Shovel and scissors
-		["scissors"]            = {
+	["scissors"]            = {
 		["name"] = "scissors",
 		["label"] = "Scissors",
 		["weight"] = 100,
@@ -282,18 +282,18 @@ Config.SkywalkerOGPrice = math.random(10, 20)
 		["combinable"] = nil,
 		["description"] = ""
 	},
-	["trovel"]                 = {
-        ["name"] = "trowel",
-        ["label"] = "Trowel",
-        ["weight"] = 100,
-        ["type"] = "item",
-        ["image"] = "trowel.png",
-        ["unique"] = false,
-        ["useable"] = true,
-        ["shouldClose"] = true,
-        ["combinable"] = nil,
-        ["description"] = ""
-    },
+	["trowel"]                 = {
+		["name"] = "trowel",
+		["label"] = "Trowel",
+		["weight"] = 100,
+		["type"] = "item",
+		["image"] = "trowel.png",
+		["unique"] = false,
+		["useable"] = true,
+		["shouldClose"] = true,
+		["combinable"] = nil,
+		["description"] = ""
+	},
 If you are adding more drugs to the script, make sure you add them to items.lua
 
 ```

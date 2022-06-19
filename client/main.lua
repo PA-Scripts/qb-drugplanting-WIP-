@@ -320,7 +320,7 @@ RegisterNetEvent("qb-drugs:client:startPlanting",function(plant)
     else
         QBCore.Functions.Notify('You need a Shovel to plant that...', 'error', 7500)
     end
-    end, "farm_pa")
+    end, "trowel")
 end)
 
 RegisterNetEvent("qb-drugs:client:addPlant",function(seed, coords, id)
