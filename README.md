@@ -272,6 +272,31 @@ Config.SkywalkerOGPrice = math.random(10, 20)
 		["combinable"] = nil,
 		["description"] = "Raw Plant of Skywalker OG"
 	},
+	-- Shovel and scissors
+		["farm_tesoura"]            = {
+		["name"] = "farm_tesoura",
+		["label"] = "Farm Scisors",
+		["weight"] = 100,
+		["type"] = "item",
+		["image"] = "farm_tesoura.png",
+		["unique"] = false,
+		["useable"] = true,
+		["shouldClose"] = true,
+		["combinable"] = nil,
+		["description"] = ""
+	},
+	["farm_pa"]                 = {
+        ["name"] = "farm_pa",
+        ["label"] = "Shovel",
+        ["weight"] = 100,
+        ["type"] = "item",
+        ["image"] = "farm_pa.png",
+        ["unique"] = false,
+        ["useable"] = true,
+        ["shouldClose"] = true,
+        ["combinable"] = nil,
+        ["description"] = ""
+    },
 If you are adding more drugs to the script, make sure you add them to items.lua
 
 ```
