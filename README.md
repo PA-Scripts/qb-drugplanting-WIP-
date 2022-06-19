@@ -239,7 +239,7 @@ No preview yet
 ```
 - To add More Drugs
 
-```
+
 # Client/main.lua
 
 ```
@@ -255,6 +255,7 @@ RegisterNetEvent('qb-drugs:client:BuyDRUGNAME', function()
     TriggerServerEvent('qb-drugs:server:BuySkunk')
     TriggerEvent('qb-drugs:client:SeedsMenu')
 end)
+```
 
 
 # Server/main.lua
