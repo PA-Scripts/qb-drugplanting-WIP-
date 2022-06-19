@@ -201,7 +201,7 @@ Config.SkywalkerOGPrice = math.random(10, 20)
 	},
 	--raw weed
 	["raw_weed_whitewidow"]        = {
-		["name"] = "weed_white-widow_seed",
+		["name"] = "raw_weed_whitewidow",
 		["label"] = "White Widow Plant",
 		["weight"] = 2,
 		["type"] = "item",
@@ -213,7 +213,7 @@ Config.SkywalkerOGPrice = math.random(10, 20)
 		["description"] = "Raw Plant of White Widow"
 	},
 	["raw_weed_skunk"]              = {
-		["name"] = "seed_weed_skunk",
+		["name"] = "raw_weed_skunk",
 		["label"] = "Skunk Plant",
 		["weight"] = 2,
 		["type"] = "item",
@@ -225,7 +225,7 @@ Config.SkywalkerOGPrice = math.random(10, 20)
 		["description"] = "Raw Plant of Skunk"
 	},
 	["raw_weed_lemonhaze"]        = {
-		["name"] = "seed_weed_lemonhaze",
+		["name"] = "raw_weed_lemonhaze",
 		["label"] = "Lemon Haze Plant",
 		["weight"] = 2,
 		["type"] = "item",
@@ -237,7 +237,7 @@ Config.SkywalkerOGPrice = math.random(10, 20)
 		["description"] = "Raw Plant of Lemon Haze"
 	},
 	["raw_weed_masterkush"]            = {
-		["name"] = "seed_weed_masterkush",
+		["name"] = "raw_weed_masterkush",
 		["label"] = "Master Kush Plant",
 		["weight"] = 2,
 		["type"] = "item",
@@ -249,7 +249,7 @@ Config.SkywalkerOGPrice = math.random(10, 20)
 		["description"] = "Raw Plant of Master Kush"
 	},
 	["raw_weed_afghani"]            = {
-		["name"] = "seed_weed_afghani",
+		["name"] = "raw_weed_afghani",
 		["label"] = "Afghani Plant",
 		["weight"] = 2,
 		["type"] = "item",
