@@ -2,7 +2,7 @@
 QBCore drug system with seeds
 - Can plant anywhere
 - Can add more drugs if you want
-- Can work with ps-drugproccesing https://github.com/Project-Sloth/ps-drugprocessing
+- Can work with ps-drugproccesing https://github.com/Project-Sloth/ps-drugprocessing or keep-crafting https://github.com/swkeep/keep-crafting. Or your own crafting/processing script.
 
 # Issues:
 - Need to add soil check (can plant anywhere)
