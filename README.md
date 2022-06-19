@@ -273,24 +273,24 @@ Config.SkywalkerOGPrice = math.random(10, 20)
 		["description"] = "Raw Plant of Skywalker OG"
 	},
 	-- Shovel and scissors
-		["farm_tesoura"]            = {
-		["name"] = "farm_tesoura",
-		["label"] = "Farm Scisors",
+		["scissors"]            = {
+		["name"] = "scissors",
+		["label"] = "Scissors",
 		["weight"] = 100,
 		["type"] = "item",
-		["image"] = "farm_tesoura.png",
+		["image"] = "scissors.png",
 		["unique"] = false,
 		["useable"] = true,
 		["shouldClose"] = true,
 		["combinable"] = nil,
 		["description"] = ""
 	},
-	["farm_pa"]                 = {
-        ["name"] = "farm_pa",
-        ["label"] = "Shovel",
+	["trovel"]                 = {
+        ["name"] = "trowel",
+        ["label"] = "Trowel",
         ["weight"] = 100,
         ["type"] = "item",
-        ["image"] = "farm_pa.png",
+        ["image"] = "trowel.png",
         ["unique"] = false,
         ["useable"] = true,
         ["shouldClose"] = true,

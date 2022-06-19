@@ -5,7 +5,7 @@ Config.ShopPedTarget = vector3(2932.23, 4624.04, 47.72) -- Target location for S
 
 Config.WaterLoc = vector3(2954.79, 4672.29, 50.46) -- Location to water fill station
 
-Config.GrowRate = 1 -- In how many seconds it takes to update the plant (At 100% rate plant will grow 1% every update)
+Config.GrowRate = 4 -- In how many seconds it takes to update the plant (At 100% rate plant will grow 1% every update)
 
 
 Config.WaterQuantity = math.random(50, 100) -- Quantity of water that 1 water can can fill the plant

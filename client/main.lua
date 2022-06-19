@@ -172,18 +172,6 @@ RegisterNetEvent('qb-drugs:client:BuyScissors', function()
     TriggerEvent('qb-drugs:client:MenuAccessories')
 end)
 
-RegisterNetEvent('qb-drugs:client:FillWater', function()
-    TriggerEvent('animations:client:EmoteCommandStart', {"mechanic3"})
-    QBCore.Functions.Progressbar('name_here', 'FILLING WATER CAN...', 5000, false, true, {
-        disableMovement = true,
-        disableCarMovement = true,
-        disableMouse = false,
-        disableCombat = true,
-    }, {}, {}, {}, function()
-        TriggerEvent('animations:client:EmoteCommandStart', {"c"})
-        TriggerServerEvent('qb-drugs:server:FillWater')
-    end)
-end)
 
 -- Threads
 
@@ -217,22 +205,6 @@ CreateThread(function()
     })
 end)
 
-CreateThread(function()
-    exports['qb-target']:AddBoxZone("farmwater", Config.WaterLoc, 4, 4, {
-        name="farmwater",
-        heading=0,
-        debugpoly = false,
-    }, {
-        options = {
-            {
-                event = "qb-drugs:client:FillWater",
-                icon = "fas fa-dewpoint",
-                label = "Fill Water Can",
-            },
-        },
-        distance = 1.5
-    })
-end)
 
 -- Plantas
 

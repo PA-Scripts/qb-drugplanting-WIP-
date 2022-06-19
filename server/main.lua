@@ -17,7 +17,7 @@ end)
 RegisterNetEvent('qb-drugs:server:BuyShovel', function()
     local src = source
     local Player = QBCore.Functions.GetPlayer(src)
-    local item = 'farm_pa'
+    local item = 'trowel'
     local money = 'bank'
     local plantamount = 1
     local price = 50
@@ -112,22 +112,11 @@ end)
 --     Player.Functions.AddItem(item, plantamount)
 -- end)
 
-RegisterNetEvent('qb-drugs:server:BuyWateringCan', function()
-    local src = source
-    local Player = QBCore.Functions.GetPlayer(src)
-    local item = 'farm_regador'
-    local money = 'bank'
-    local plantamount = 1
-    local price = 10
-
-    Player.Functions.RemoveMoney(money, price)
-    Player.Functions.AddItem(item, plantamount)
-end)
 
 RegisterNetEvent('qb-drugs:server:BuyScissors', function()
     local src = source
     local Player = QBCore.Functions.GetPlayer(src)
-    local item = 'farm_tesoura'
+    local item = 'scissors'
     local money = 'bank'
     local plantamount = 1
     local price = 20
@@ -136,22 +125,6 @@ RegisterNetEvent('qb-drugs:server:BuyScissors', function()
     Player.Functions.AddItem(item, plantamount)
 end)
 
-RegisterNetEvent('qb-drugs:server:FillWater', function()
-    local src = source
-    local Player = QBCore.Functions.GetPlayer(src)
-    local farm_regador = Player.Functions.GetItemByName('farm_regador')
-    local item = 'farm_regador'
-    local item2 = 'farm_regador_cheio'
-    local plantamount = 1
-
-    if farm_regador ~= nil then
-
-        Player.Functions.RemoveItem(item, plantamount)
-        Player.Functions.AddItem(item2, plantamount)
-    else
-        TriggerClientEvent("QBCore:Notify", src, "You need a empty water can...", "error")
-    end
-end)
 
 -- Items
 
