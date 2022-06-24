@@ -1,4 +1,5 @@
 # qb-drugplanting
+# RESOURCE PUT ON HOLD!
 QBCore drug system with seeds
 - Can plant anywhere
 - Can add more drugs if you want
